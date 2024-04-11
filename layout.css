@@ -20,7 +20,7 @@ input
 
 ::placeholder
 {
-    font-size: 1.1em;
+    
     padding-left: 1vh;
 }
 
@@ -31,6 +31,5 @@ input
 
 .msg
 {
-    font-size: 0.8em;
     color: rgb(255,0,0);
 }
