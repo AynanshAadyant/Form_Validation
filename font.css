@@ -1,4 +1,11 @@
-label
+::placeholder
 {
-    font-size: 2em;
+     font-size: 1.1em;
 }
+
+.msg
+{
+    font-size: 0.8em;
+   
+}
+
