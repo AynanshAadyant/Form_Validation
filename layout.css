@@ -1,0 +1,36 @@
+body
+{
+    background-color: rgb(242, 189, 152);
+}
+.container
+{
+    background-color: white;
+    width: 90vw;
+    
+    margin-top: 1vh;
+}
+
+
+input
+{
+    width: 60vw;
+    height: 7vh;
+}
+
+
+::placeholder
+{
+    font-size: 1.1em;
+    padding-left: 1vh;
+}
+
+.submit
+{
+    width: 30vw;
+}
+
+.msg
+{
+    font-size: 0.8em;
+    color: rgb(255,0,0);
+}
