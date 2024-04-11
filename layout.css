@@ -13,7 +13,7 @@ body
 
 input
 {
-    width: 60vw;
+    width: 58vw;
     height: 7vh;
 }
 
@@ -32,4 +32,7 @@ input
 .msg
 {
     color: rgb(255,0,0);
+    width: 45vw;
+    margin-left: 8vw;
 }
+
