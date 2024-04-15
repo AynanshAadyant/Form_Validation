@@ -18,6 +18,8 @@ input
 }
 
 
+
+
 ::placeholder
 {
     
@@ -29,6 +31,19 @@ input
     width: 30vw;
 }
 
+nav{
+    padding : 2vw;
+    margin-top: -2vw;
+    
+}
+
+#theme
+{
+    border: none 0px white;
+    background-color: white;
+    text-decoration: underline;
+}
+
 .msg
 {
     color: rgb(255,0,0);
@@ -36,3 +51,30 @@ input
     margin-left: 8vw;
 }
 
+
+.msg-submit
+{
+    margin-left: 16vw;
+}
+
+.name, .phno, .email, .pass, .repass
+{
+    border : solid 2px grey;
+    border-radius: 5px;
+}
+@media only screen and (min-width:801px) and (max-width: 1500px)
+{
+    .msg-submit
+    {
+        margin-left : 21vw;
+    }
+    
+}
+
+@media only screen and (min-width:400px) and (max-width:800px)
+{
+    .msg-submit
+    {
+        margin-left : 19vw;
+    }
+}
