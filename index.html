@@ -11,42 +11,49 @@
 
 </head>
 <body>
+    
     <div class="container  border rounded-4 text-center">
         <div class="row  m-3">
             <h1 class="display-1">Sign up...</h1>
+           
         </div>
         <div class="container-fluid text-center">
-            <form action="">
+            
                 <div class="name-tag">
-                    <input type="text" placeholder="Name" class="name">
-                    <p class="msg text-start"></p>
+                    <input type="text" placeholder="Name" class="name" value="">
+                    <p class="msg msg-name text-start"></p>
                 </div>
 
                 <div class="cred-tag">
-                    <input type="email" placeholder="Email" class="email">
-                    <p class="msg text-start"></p>
-                    <input type="number" placeholder="Phone" class="phno">
-                    <p class="msg text-start"></p>
+                    <input type="email" placeholder="Email" class="email" value="">
+                    <p class="msg msg-email text-start"></p>
+                    <input type="number" placeholder="Phone" class="phno" value="">
+                    <p class="msg msg-phno text-start"></p>
                     
                 </div>
 
                 <div class="pass-tag">
-                    <input type="password" placeholder="Password">
-                    <p class="msg text-start"></p>
-                    <input type="password" placeholder="Confirm password">
-                    
-                        <p class="msg text-start "></p>
+                    <input type="password" placeholder="Password" class="pass" value="">
+                    <p class="msg msg-pass text-start"></p>
+                    <input type="password" placeholder="Confirm password" class="repass" value="">
+                    <p class="msg msg-repass text-start "></p>
                     
                 </div>
 
                 <div class="submit-button pb-3">
                     <input type="submit" value="Submit" class="submit">
+                    <p class="msg msg-submit ml-2"></p>
                 </div>
+                <nav>
+                    <img src="dark-mode.png" alt="">
+                </nav>
 
-            </form>
+            
         </div>
 
-     </div>   
-    
+     </div>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
+    <script src="script.js"></script>
 </body>
 </html>
