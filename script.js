@@ -28,8 +28,11 @@ function checkName( name )
         
     if ( name.length < 5 )
      {   msg = " Name too short ";  }
-    if ( name.charAt(0) >= '0' && name.charAt(0) <= '9' )
+    else if ( name.charAt(0) >= '0' && name.charAt(0) <= '9' )
       {  msg = " Name cannot start with number";  }
+      else
+      {$(".name").css("border-color" , "rgb(50,250,50)");
+        $(".msg-name").text("Valid"); return;}
     $("msg-name").text(msg);
     }
     else return;
@@ -43,10 +46,14 @@ function checkPhone( phno )
         
     if( phno == "1234567890" )
       {  msg= "Invalid Phone Number";  }
-    if( phno.length != 10)
+    else if( phno.length != 10)
     {
         msg = "Phone number should be of 10 digits" ; 
     }
+    else
+    {$(".phno").css("border-color" , "rgb(50,250,50)");
+        $(".msg-phno").text("Valid");
+    return; }
     $(".msg-phno").text(msg);
     return;
     }
@@ -59,12 +66,17 @@ function checkEmail( email )
     if(email != "")
     {
         
-    if( email.indexOf('@')<0 )
+     if( email.indexOf('@')<0 )
      {   msg = "Invalid email entered";  }
+    else
+    {    $(".email").css("border-color" , "rgb(50,250,50)"); 
+        $(".email").text("Valid");
+        return ;}
     $(".msg-email").text(msg);
+    
     return;
     }
-    else return;
+    else return false;
 
 }
 
@@ -76,8 +88,12 @@ function checkPass( pass , name )
     if( pass=="password" || pass=="PASSWORD" || pass==name || pass=="12345678" 
     || pass=="0987654321" )
     {  msg = "Password too weak";  }
-    if( pass.length < 8 )
+    else if( pass.length < 8 )
     {   msg = "Password too short"; }
+    else 
+    {$(".pass").css("border-color" , "rgb(50,250,50)");
+    $(".msg-pass").text("Valid");
+    return;}
     $(".msg-pass").text(msg);
     return;
     }
@@ -91,9 +107,14 @@ function checkConfirmPass( pass, repass )
     {
     if( pass !== repass )
     {    msg= "Passwords do not match";  }
+    else
+    {$(".repass").css("border-color" , "rgb(50,250,50)"); 
+    $(".msg-repass").text("Valid");
+    return;}
     $(".msg-repass").text(msg);
     $(".msg-submit").text("");
     return;
+    
     }
     else return;
 }
