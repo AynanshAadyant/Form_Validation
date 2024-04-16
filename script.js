@@ -35,7 +35,7 @@ function checkName( name )
         $(".msg-name").text("Valid"); return;}
     $("msg-name").text(msg);
     }
-    else return;
+    
 }
 
 function checkPhone( phno )
@@ -55,9 +55,9 @@ function checkPhone( phno )
         $(".msg-phno").text("Valid");
     return; }
     $(".msg-phno").text(msg);
-    return;
+    
     }
-    else return;
+    
 }
 
 function checkEmail( email )
@@ -74,9 +74,9 @@ function checkEmail( email )
         return ;}
     $(".msg-email").text(msg);
     
-    return;
+    
     }
-    else return false;
+    
 
 }
 
@@ -95,9 +95,9 @@ function checkPass( pass , name )
     $(".msg-pass").text("Valid");
     return;}
     $(".msg-pass").text(msg);
-    return;
+    
     }
-    else return;
+    
 }
 
 function checkConfirmPass( pass, repass )
@@ -116,7 +116,7 @@ function checkConfirmPass( pass, repass )
     return;
     
     }
-    else return;
+    
 }
 
 function checkAll( name , email , phno , pass , repass )
