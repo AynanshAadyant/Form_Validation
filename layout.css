@@ -39,10 +39,9 @@ nav{
 
 #theme
 {
-    border: none 0px white;
-    background-color: white;
-    text-decoration: underline;
+    color: black;
 }
+
 
 .msg
 {
