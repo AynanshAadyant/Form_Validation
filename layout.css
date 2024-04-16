@@ -61,13 +61,27 @@ nav{
     border : solid 2px grey;
     border-radius: 5px;
 }
-@media only screen and (min-width:801px) and (max-width: 1500px)
+@media only screen and (min-width:801px)
 {
     .msg-submit
     {
         margin-left : 21vw;
     }
+
+    .container
+    {
+        width: 50vw;
+    }
+
+    input
+    {
+        width: 31vw;
+         height: 7vh;
+    }
     
+    .submit{
+        width: 12vw;
+    }
 }
 
 @media only screen and (min-width:400px) and (max-width:800px)
