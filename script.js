@@ -27,15 +27,21 @@ function checkName( name )
     {
         
     if ( name.length < 5 )
-     {   msg = " Name too short ";  }
+     {   
+         msg = " Name too short ";  
+     }
     else if ( name.charAt(0) >= '0' && name.charAt(0) <= '9' )
-      {  msg = " Name cannot start with number";  }
-      else
-      {$(".name").css("border-color" , "rgb(50,250,50)");
-        $(".msg-name").text("Valid"); return;}
+      {  
+          msg = " Name cannot start with number";  
+      }
+    else
+    {
+        $(".name").css("border-color" , "rgb(50,250,50)");
+        $(".msg-name").text("Valid"); 
+        return;
+    }
     $("msg-name").text(msg);
     }
-    
 }
 
 function checkPhone( phno )
@@ -45,19 +51,21 @@ function checkPhone( phno )
     {
         
     if( phno == "1234567890" )
-      {  msg= "Invalid Phone Number";  }
+    {  
+          msg= "Invalid Phone Number";  
+    }
     else if( phno.length != 10)
     {
         msg = "Phone number should be of 10 digits" ; 
     }
     else
-    {$(".phno").css("border-color" , "rgb(50,250,50)");
+    {
+        $(".phno").css("border-color" , "rgb(50,250,50)");
         $(".msg-phno").text("Valid");
-    return; }
-    $(".msg-phno").text(msg);
-    
+        return; 
     }
-    
+    $(".msg-phno").text(msg);
+    }
 }
 
 function checkEmail( email )
@@ -69,15 +77,13 @@ function checkEmail( email )
      if( email.indexOf('@')<0 )
      {   msg = "Invalid email entered";  }
     else
-    {    $(".email").css("border-color" , "rgb(50,250,50)"); 
+    {    
+        $(".email").css("border-color" , "rgb(50,250,50)"); 
         $(".email").text("Valid");
-        return ;}
-    $(".msg-email").text(msg);
-    
-    
+        return ;
     }
-    
-
+    $(".msg-email").text(msg);
+    }
 }
 
 function checkPass( pass , name )
@@ -87,17 +93,21 @@ function checkPass( pass , name )
         
     if( pass=="password" || pass=="PASSWORD" || pass==name || pass=="12345678" 
     || pass=="0987654321" )
-    {  msg = "Password too weak";  }
-    else if( pass.length < 8 )
-    {   msg = "Password too short"; }
-    else 
-    {$(".pass").css("border-color" , "rgb(50,250,50)");
-    $(".msg-pass").text("Valid");
-    return;}
-    $(".msg-pass").text(msg);
-    
+    {  
+        msg = "Password too weak";  
     }
-    
+    else if( pass.length < 8 )
+    {   
+        msg = "Password too short"; 
+    }
+    else 
+    {
+        $(".pass").css("border-color" , "rgb(50,250,50)");
+        $(".msg-pass").text("Valid");
+        return;
+    }
+    $(".msg-pass").text(msg);
+    }
 }
 
 function checkConfirmPass( pass, repass )
@@ -108,15 +118,15 @@ function checkConfirmPass( pass, repass )
     if( pass !== repass )
     {    msg= "Passwords do not match";  }
     else
-    {$(".repass").css("border-color" , "rgb(50,250,50)"); 
-    $(".msg-repass").text("Valid");
-    return;}
+    {
+        $(".repass").css("border-color" , "rgb(50,250,50)"); 
+        $(".msg-repass").text("Valid");
+        return;
+    }
     $(".msg-repass").text(msg);
     $(".msg-submit").text("");
     return;
-    
     }
-    
 }
 
 function checkAll( name , email , phno , pass , repass )
